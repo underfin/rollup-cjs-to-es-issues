@@ -1,0 +1,28 @@
+{
+  "name": "rollup-cjs-to-es-issues",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/underfin/rollup-cjs-to-es-issues.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/underfin/rollup-cjs-to-es-issues/issues"
+  },
+  "homepage": "https://github.com/underfin/rollup-cjs-to-es-issues#readme",
+  "dependencies": {
+    "@ethersproject/random": "^5.0.2",
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "rollup": "^2.26.5",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0"
+  }
+}
