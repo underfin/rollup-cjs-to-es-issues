@@ -12,11 +12,13 @@ const rollup = require('rollup')
  rollup.rollup({
   input: './input.js',
   plugins: [
+    require('@rollup/plugin-commonjs')({
+      extensions: ['.js', '.cjs'],
+      transformMixedEsModules: true
+    }),
     globalsPlugin,
     builtinsPlugin,
-    require('@rollup/plugin-commonjs')({
-      extensions: ['.js', '.cjs']
-    }),
+
     require('@rollup/plugin-node-resolve').nodeResolve({
       rootDir: process.cwd(),
       extensions:  ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json'],
